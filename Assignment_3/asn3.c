@@ -1,4 +1,5 @@
 
+
 #include <sys/types.h> 
 #include <stdio.h>
 #include <stdlib.h>
@@ -70,7 +71,7 @@ int main()
 		if (flag == 0)
 		{
 			//enter
-			critical_section (1, getpid());
+			critical_section (20, getpid());
 			
 			flag++;
 			write(fd[1], &flag, sizeof(flag));
