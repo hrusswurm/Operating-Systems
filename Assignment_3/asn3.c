@@ -1,5 +1,4 @@
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/wait.h>
@@ -89,7 +88,7 @@ int main()
 		
 	}
 	//Indicate completion to the screen
-	printf("I'm done %d\n\n", getpid());
+	printf("Process %d is now complete.\n\n", getpid());
 
 	return 0;
 }
